@@ -1,4 +1,4 @@
-# Project Plan — Global Happiness and Economic Development (2019)
+# Project Plan — Global Happiness and Economic Development (2018)
 
 ## Overview
 
