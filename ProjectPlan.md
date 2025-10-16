@@ -2,13 +2,13 @@
 
 ## Overview
 
-This project examines the relationship between economic development and national happiness across countries in 2019. Using two trusted, openly available datasets — the World Happiness Report 2019 and the Gapminder Global Development Data — it investigates how economic and demographic factors such as GDP per capita and life expectancy relate to citizens' reported happiness.
+This project examines the relationship between economic development and national happiness across countries in 2018. Using two trusted, openly available datasets — the World Happiness Report 2018 and the Gapminder Global Development Data — it investigates how economic and demographic factors such as GDP per capita and life expectancy relate to citizens' reported happiness.
 
-The project focuses on a single year (2019) for consistency, as the Happiness dataset does not extend beyond that year. This also simplifies integration and avoids temporal mismatches. The final analysis will involve merging, cleaning, profiling, and visualizing the combined dataset to reveal how economic prosperity and quality of life correlate with happiness levels worldwide.
+The project focuses on a single year (2018) for consistency, as the Happiness dataset does not extend beyond that year. This also simplifies integration and avoids temporal mismatches. The final analysis will involve merging, cleaning, profiling, and visualizing the combined dataset to reveal how economic prosperity and quality of life correlate with happiness levels worldwide.
 
 ## Research Questions
 
-1. Is GDP per capita associated with national happiness in 2019?
+1. Is GDP per capita associated with national happiness in 2018?
 2. Do countries with higher life expectancy report higher happiness levels?
 3. Are there regional or continental differences in happiness relative to economic performance?
 4. Which economic indicators are most predictive of happiness across countries?
@@ -26,11 +26,11 @@ The project focuses on a single year (2019) for consistency, as the Happiness da
 
 ## Datasets
 
-### Dataset 1: World Happiness Report 2019
+### Dataset 1: World Happiness Report 2018
 
 - **Source:** [Kaggle: World Happiness Report Dataset]()
-- **Direct CSV:** [https://github.com/unsdsn/world-happiness/blob/master/2019.csv]()
-- **Coverage:** 158 countries (2019)
+- **Direct CSV:** [https://github.com/unsdsn/world-happiness/blob/master/2018.csv]()
+- **Coverage:** 158 countries (2018)
 - **Variables:**
   - Country or region
   - Score — overall happiness score (0–10)
@@ -62,7 +62,7 @@ The project focuses on a single year (2019) for consistency, as the Happiness da
 
 ## Integration Plan
 
-1. Filter both datasets for 2019 to align temporal coverage.
+1. Filter both datasets for 2018 to align temporal coverage.
 2. Standardize country names (e.g., "United States" vs. "United States of America").
 3. Merge datasets using `pandas.merge()` on the country column (inner join).
 4. Clean and normalize data:
@@ -87,7 +87,7 @@ The project focuses on a single year (2019) for consistency, as the Happiness da
 ## Constraints
 
 - **Non-matching countries:** Happiness (158) vs. Gapminder (175); the merge may yield ~150 records.
-- **Year limitation:** Happiness data only extends to 2019; project will be limited to that year.
+- **Year limitation:** Happiness data only extends to 2018; project will be limited to that year.
 - **Country naming inconsistencies:** Will require minor cleaning (e.g., "Côte d'Ivoire" vs. "Ivory Coast").
 - **Different GDP units:** Happiness dataset uses log GDP; Gapminder uses absolute GDP — normalization will be needed before correlation.
 - **Interpretation limits:** Correlation ≠ causation; the report will clearly state this.
@@ -118,7 +118,7 @@ The project focuses on a single year (2019) for consistency, as the Happiness da
 
 ## Planned Outputs
 
-- **Integrated dataset:** `/data/processed/happiness_economy_2019.csv`
+- **Integrated dataset:** `/data/processed/happiness_economy_2018.csv`
 - **Python scripts:** for data cleaning, integration, and visualization.
 - **Visualizations:**
   - GDP per capita vs. Happiness scatterplot
@@ -137,10 +137,10 @@ IS477-Project/
 │
 ├── data/
 │   ├── raw/
-│   │   ├── world_happiness_2019.csv
+│   │   ├── world_happiness_2018.csv
 │   │   └── gapminder.csv
 │   └── processed/
-│       └── happiness_economy_2019.csv
+│       └── happiness_economy_2018.csv
 │
 ├── scripts/
 │   ├── clean_merge.py
@@ -159,6 +159,6 @@ IS477-Project/
 
 ## Conclusion
 
-This project will explore how economic indicators such as GDP per capita and life expectancy correlate with national happiness levels using two reputable, open datasets: World Happiness Report 2019 and Gapminder. By focusing on 2019, it ensures consistent temporal coverage and straightforward data integration.
+This project will explore how economic indicators such as GDP per capita and life expectancy correlate with national happiness levels using two reputable, open datasets: World Happiness Report 2018 and Gapminder. By focusing on 2018, it ensures consistent temporal coverage and straightforward data integration.
 
 The final deliverable will include a fully reproducible workflow, a cleaned and merged dataset, and visualizations illustrating the connections between economic prosperity and happiness — aligning with the IS477 course objectives of ethical, transparent, and reproducible data curation.
