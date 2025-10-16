@@ -15,14 +15,16 @@ The project focuses on a single year (2018) for consistency, as the Happiness da
 
 ## Team
 
-- **Student:** Greg A.
-- **Role:** Working individually (with instructor approval)
+- **Student:** Gregorius Aviantoro
+- **Role:** Data Sourcing, Preprocessing, and Data Vizualisation.
 - **Responsibilities:**
   - Data acquisition, cleaning, and documentation.
   - Integration and quality assessment.
-  - Exploratory data analysis and visualization.
-  - Workflow automation for reproducibility.
   - Preparation of Markdown documentation and GitHub deliverables.
+- **Student:** Rishi Akul
+- **Role:** 
+- **Responsibilities:**
+  - 
 
 ## Datasets
 
@@ -130,7 +132,7 @@ The project focuses on a single year (2018) for consistency, as the Happiness da
   - data_dictionary.md (metadata)
   - requirements.txt (Python dependencies)
 
-## Recommended GitHub Repository Structure
+## GitHub Repository Structure
 
 ```
 IS477-Project/
