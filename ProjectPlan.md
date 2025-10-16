@@ -30,7 +30,7 @@ The project focuses on a single year (2018) for consistency, as the Happiness da
 
 ### Dataset 1: World Happiness Report 2018
 
-- **Source:** [Kaggle: World Happiness Report Dataset]()
+- **Source:** [[Kaggle: World Happiness Report Dataset]()](https://www.kaggle.com/datasets/unsdsn/world-happiness?resource=download)
 - **Direct CSV:** [https://github.com/unsdsn/world-happiness/blob/master/2018.csv]()
 - **Coverage:** 158 countries (2018)
 - **Variables:**
@@ -49,8 +49,9 @@ The project focuses on a single year (2018) for consistency, as the Happiness da
 
 ### Dataset 2: Gapminder Global Development Data
 
-- **Source:** [Gapminder Data Portal](https://www.gapminder.org/data/?utm_source=chatgpt.com)
-- **Direct CSV:** [https://github.com/syntagmatic/gapminder-csv/raw/master/data/gapminder.csv](https://github.com/syntagmatic/gapminder-csv/raw/master/data/gapminder.csv)
+- **Source:** https://www.kaggle.com/datasets/albertovidalrod/gapminder-dataset?
+- **Direct CSV:**[ [https://github.com/syntagmatic/gapminder-csv/raw/master/data/gapminder.csv](https://github.com/syntagmatic/gapminder-csv/raw/master/data/gapminder.csv)
+- https://www.kaggle.com/datasets/albertovidalrod/gapminder-dataset? ]
 - **Coverage:** 175 countries (1950–2021)
 - **Variables (used):**
   - country
