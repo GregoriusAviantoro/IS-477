@@ -67,7 +67,6 @@ The project focuses on a single year (2018) for consistency, as the Happiness da
 - **Use in project:** Provides economic and demographic indicators for analysis.
 
 ## Integration Plan
-
 1. Use the 2018 csv file from the World Happiness Report and filter the gapminder dataset for 2018.
 2. Standardize country names (example: "Hong Kong" vs. "Hong Kong, China").
 3. Merge datasets using `pandas.merge()` on the country column.
@@ -78,7 +77,28 @@ The project focuses on a single year (2018) for consistency, as the Happiness da
    - Compute summary statistics and correlation coefficients.
    - Visualize relationships using scatterplots and heatmaps.
 6. Automate workflow with a `run_all.py` or Snakemake pipeline for reproducibility.
-
+- Automate the full data workflow using Python and Snakemake to ensure reproducibility and transparency.
+- Download both the World Happiness Report 2018 and Gapminder datasets directly from their source URLs into a `data/raw` directory.
+- Clean and preprocess data:
+  - Harmonize country names to ensure consistent merging.
+  - Filter both datasets to include only data from 2018.
+  - Convert GDP values into comparable units.
+  - Merge the datasets into a single integrated file in `data/processed`.
+- Perform exploratory data analysis (EDA):
+  - Generate descriptive statistics and correlation matrices.
+  - Compute key summary metrics to support further analysis.
+- Create visualizations:
+  - Plot scatterplots showing relationships between happiness and GDP per capita.
+  - Plot scatterplots showing relationships between happiness and life expectancy.
+  - Generate a correlation heatmap to show relationships among variables.
+- Record provenance information:
+  - Capture dataset URLs, download timestamps, and SHA-256 file checksums.
+  - Document Python and package versions used in the workflow.
+  - Log all transformation steps to track the complete data lifecycle.
+- Store provenance data in a structured JSON file to enable verification, reproducibility, and traceability.
+- Organize the workflow into clearly separated stages for raw, processed, and output data to follow best practices in data lineage and ethical data management.
+- Ensure that the workflow design meets all Module 11–12 requirements for automation and provenance.
+   
 ## Timeline
 
 | Date Range | Task | Description | Responsible |
