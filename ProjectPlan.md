@@ -21,10 +21,14 @@ The project focuses on a single year (2018) for consistency, as the Happiness da
   - Data acquisition, cleaning, and documentation.
   - Integration and quality assessment.
   - Preparation of Markdown documentation and GitHub deliverables.
-- **Student:** Rishi Akul
-- **Role:** 
+- **Student:** Rishi Akula
+- **Role:** Model Development, Analysis, and Reporting
 - **Responsibilities:**
-  - X
+  - Build, train, and test machine learning models on the prepared dataset.
+  - Conduct exploratory data analysis (EDA) and feature engineering to improve model performance.
+  - Evaluate, compare, and optimize models using appropriate metrics.
+  - Interpret and document model results and insights clearly.
+  - Contribute to the preparation of final Markdown reports and GitHub deliverables.
 
 ## Datasets
 
