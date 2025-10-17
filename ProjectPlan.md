@@ -82,7 +82,6 @@ The project focuses on a single year (2018) for consistency, as the Happiness da
 - Clean and preprocess data:
   - Harmonize country names to ensure consistent merging.
   - Filter both datasets to include only data from 2018.
-  - Convert GDP values into comparable units.
   - Merge the datasets into a single integrated file in `data/processed`.
 - Perform exploratory data analysis (EDA):
   - Generate descriptive statistics and correlation matrices.
