@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project examines the relationship between economic development and national happiness across countries in 2018. Using two trusted, openly available datasets — the World Happiness Report 2018 and the Gapminder Global Development Data — it investigates how economic and demographic factors such as GDP per capita and life expectancy relate to citizens' reported happiness.
+This project examines the relationship between economic development and national happiness across countries in 2018. Using two trusted openly available datasets: the World Happiness Report 2018 and the Gapminder Global Development Data. It investigates how economic and demographic factors such as GDP per capita and life expectancy relate to citizens' reported happiness.
 
 The project focuses on a single year (2018) for consistency, as the Happiness dataset does not extend beyond that year. This also simplifies integration and avoids temporal mismatches. The final analysis will involve merging, cleaning, profiling, and visualizing the combined dataset to reveal how economic prosperity and quality of life correlate with happiness levels worldwide.
 
@@ -24,50 +24,49 @@ The project focuses on a single year (2018) for consistency, as the Happiness da
 - **Student:** Rishi Akul
 - **Role:** 
 - **Responsibilities:**
-  - 
+  - X
 
 ## Datasets
 
 ### Dataset 1: World Happiness Report 2018
 
-- **Source:** [[Kaggle: World Happiness Report Dataset]()](https://www.kaggle.com/datasets/unsdsn/world-happiness?resource=download)
-- **Direct CSV:** [https://github.com/unsdsn/world-happiness/blob/master/2018.csv]()
-- **Coverage:** 158 countries (2018)
+- **Source:** (https://www.kaggle.com/datasets/unsdsn/world-happiness?resource=download)
+- **Coverage:** 156 countries (2018)
 - **Variables:**
-  - Country or region
-  - Score — overall happiness score (0–10)
-  - GDP per capita — national income (log scale)
-  - Social support
-  - Healthy life expectancy
-  - Freedom to make life choices
-  - Generosity
-  - Perceptions of corruption
+  - Overall Rank: Rank of countries based on happiness score
+  - Country or region: Describes the country name
+  - Score: Overall happiness score (0–10)
+  - GDP per capita: The Gross Domestic Product of each country divided by population
+  - Social support: Social Support score contribution to the happiness score
+  - Healthy life expectancy: Healthy life expectancy score contribution to the happiness score
+  - Freedom to make life choices: Freedom to ake life choices score contribution to the happiness score
+  - Generosity: Generosity score contribution to the happiness score
+  - Perceptions of corruption: Corruption perception score contribution to the happiness score
 - **Format:** CSV
-- **License:** CC BY 4.0
-- **Notes:** Represents subjective well-being data compiled from Gallup World Poll responses.
 - **Use in project:** Provides the dependent variable (Score) and several social indicators.
 
 ### Dataset 2: Gapminder Global Development Data
 
 - **Source:** https://www.kaggle.com/datasets/albertovidalrod/gapminder-dataset?
-- **Direct CSV:**[ [https://github.com/syntagmatic/gapminder-csv/raw/master/data/gapminder.csv](https://github.com/syntagmatic/gapminder-csv/raw/master/data/gapminder.csv)
-- https://www.kaggle.com/datasets/albertovidalrod/gapminder-dataset? ]
-- **Coverage:** 175 countries (1950–2021)
+- **Coverage:** 175 countries (1998–2018)
 - **Variables (used):**
-  - country
-  - year
-  - lifeExp — life expectancy at birth (years)
-  - pop — population
-  - gdpPercap — GDP per capita (constant international dollars)
+- Country (country): Describes the country name
+- Continent (continent): Describes the continent to which the country belongs
+- Year (year): Describes the year to which the data belongs
+- Life expectancy (life_exp): Describes the life expectancy for a given country in a given year
+- Human Development Index (hdi_index): Describes the HDI index value for a given country in a given year
+- CO2 emissions per person(co2_consump): Describes the CO2 emissions in tonnes per person for a given country in a given year
+- Gross Domestic Product per capita (gdp): Describes the GDP per capita in dollars for a given country in a given year
+- % Service workers (services): Describes the the % of service workers for a given country in a given year
 - **Format:** CSV
 - **License:** CC BY 4.0
 - **Use in project:** Provides economic and demographic indicators for analysis.
 
 ## Integration Plan
 
-1. Filter both datasets for 2018 to align temporal coverage.
-2. Standardize country names (e.g., "United States" vs. "United States of America").
-3. Merge datasets using `pandas.merge()` on the country column (inner join).
+1. Use the 2018 csv file from the World Happiness Report and filter the gapminder dataset for 2018.
+2. Standardize country names (example: "Hong Kong" vs. "Hong Kong, China").
+3. Merge datasets using `pandas.merge()` on the country column.
 4. Clean and normalize data:
    - Convert GDP per capita values to comparable units.
    - Handle missing or unmatched countries.
@@ -80,34 +79,30 @@ The project focuses on a single year (2018) for consistency, as the Happiness da
 
 | Date Range | Task | Description | Responsible |
 |------------|------|-------------|-------------|
-| Oct 16–20 | Setup & Planning | Create GitHub repo and initialize documentation | Greg |
-| Oct 21–31 | Data Acquisition | Download both CSVs and store in /data/raw/ | Greg |
-| Nov 1–10 | Cleaning & Profiling | Inspect missing values, harmonize country names, convert data types | Greg |
-| Nov 11–20 | Integration & Analysis | Merge datasets, compute descriptive statistics and correlations | Greg |
-| Nov 21–Dec 5 | Visualization & Automation | Generate charts, finalize pipeline, document workflow | Greg |
-| Dec 6–10 | Final Submission | Complete report and reproducibility materials | Greg |
+| Oct 1–16 | Setup & Planning | Create GitHub repo and initialize documentation | Gregorius |
+| Oct 17–25 | Data Acquisition | Download both CSVs and store in /data/raw/ | Gregorius |
+| Oct 26–Nov 5 | Cleaning & Profiling | Inspect missing values, harmonize country names, convert data types | Gregorius |
+| Nov 6–15 | Integration & Analysis | Merge datasets, compute descriptive statistics and correlations | Rishi |
+| Nov 16–28 | Visualization & Automation | Generate charts, finalize pipeline, document workflow | Gregorius |
+| Dec 1–10 | Final Submission | Complete report and reproducibility materials | Rishi |
 
 ## Constraints
 
 - **Non-matching countries:** Happiness (158) vs. Gapminder (175); the merge may yield ~150 records.
 - **Year limitation:** Happiness data only extends to 2018; project will be limited to that year.
-- **Country naming inconsistencies:** Will require minor cleaning (e.g., "Côte d'Ivoire" vs. "Ivory Coast").
-- **Different GDP units:** Happiness dataset uses log GDP; Gapminder uses absolute GDP — normalization will be needed before correlation.
-- **Interpretation limits:** Correlation ≠ causation; the report will clearly state this.
+- **Country naming inconsistencies:** Will require minor cleaning (example: "Côte d'Ivoire" vs. "Ivory Coast").
 
 ## Gaps / Next Steps
 
 - Confirm which subset of Gapminder indicators provides the strongest predictive power for happiness.
 - Investigate the effect of regional grouping (continents) for visualization.
 - Create a reproducibility checklist to document all analysis steps.
-- Write metadata and data dictionary for both datasets.
-- Ensure that file paths and workflow scripts are compatible with GitHub release packaging.
 
 ## Relation to Course Requirements
 
 | Requirement | How It's Addressed |
 |-------------|--------------------|
-| Data lifecycle | End-to-end process: acquisition → cleaning → integration → analysis → documentation. |
+| Data lifecycle | End-to-end process: acquisition to cleaning to integration to analysis to documentation. |
 | Ethical data handling | Both datasets are open-access under CC BY 4.0; no privacy issues. |
 | Data collection | Static CSV downloads from reputable sources. |
 | Storage & organization | Versioned storage with raw/processed separation and descriptive naming. |
@@ -133,35 +128,6 @@ The project focuses on a single year (2018) for consistency, as the Happiness da
   - data_dictionary.md (metadata)
   - requirements.txt (Python dependencies)
 
-## GitHub Repository Structure
-
-```
-IS477-Project/
-│
-├── data/
-│   ├── raw/
-│   │   ├── world_happiness_2018.csv
-│   │   └── gapminder.csv
-│   └── processed/
-│       └── happiness_economy_2018.csv
-│
-├── scripts/
-│   ├── clean_merge.py
-│   ├── visualize.py
-│   └── run_all.py
-│
-├── docs/
-│   ├── data_dictionary.md
-│   └── metadata.md
-│
-├── ProjectPlan.md
-├── README.md
-├── requirements.txt
-└── LICENSE
-```
-
 ## Conclusion
 
-This project will explore how economic indicators such as GDP per capita and life expectancy correlate with national happiness levels using two reputable, open datasets: World Happiness Report 2018 and Gapminder. By focusing on 2018, it ensures consistent temporal coverage and straightforward data integration.
-
-The final deliverable will include a fully reproducible workflow, a cleaned and merged dataset, and visualizations illustrating the connections between economic prosperity and happiness — aligning with the IS477 course objectives of ethical, transparent, and reproducible data curation.
+This project will explore how economic indicators such as GDP per capita and life expectancy correlate with national happiness levels using two reputable, open datasets: World Happiness Report 2018 and Gapminder. By focusing on 2018, it ensures consistent temporal coverage and straightforward data integration. The final deliverable will include a fully reproducible workflow, a cleaned and merged dataset, and visualizations illustrating the connections between economic prosperity and happiness, aligning with the IS477 course objectives of ethical, transparent, and reproducible data curation.
