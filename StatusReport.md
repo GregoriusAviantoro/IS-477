@@ -389,7 +389,7 @@ For this milestone, I focused on validating the integrated dataset that Gregoriu
 * Chose to begin with straightforward correlation analysis and baseline linear regression models before considering any more complex approaches, so that results remain transparent and easy to explain in the final report.
 * Decided to retain documented missing-value patterns and handle them conservatively during modeling, rather than aggressive imputation, so that the limitations of the data can be clearly communicated.
 
-**Hours Invested:** Approximately **12 hours**
+**Hours Invested:** Approximately **15 hours**
 
 **Next Steps:**
 
