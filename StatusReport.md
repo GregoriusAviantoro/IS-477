@@ -350,17 +350,13 @@ For this milestone, I took **primary responsibility** for the data curation pipe
 ### Rishi Akula (Analyst)
 
 **Individual Contribution Summary for Milestone 3:**
-### Rishi Akula (Analyst)
-
-**Individual Contribution Summary for Milestone 3:**
-
 For this milestone, I focused on validating the integrated dataset that Gregorius prepared and on planning the analysis and modeling workflow that will use this data to answer our four research questions. My work centered on reviewing the merged happiness–economy data, checking data quality from a modeling perspective, structuring the exploratory analysis, and preparing for correlation and regression steps.
 
 **1. Merge Review and Data Quality Validation (Nov 16-20):**
 
 * Reviewed `data/processed/happiness_economy_2018.csv` and `data/processed/merge_report.json` produced by `merge_data.py` to confirm that the merged dataset (144 countries, 16 variables) is suitable as the main analysis file.
 * Verified that key variables such as `happiness_score`, `happiness_rank`, `gdp_per_capita`, `life_expectancy`, `hdi_index`, and `continent` are present, consistently named, and aligned with the project plan and research questions.
-* Performed sanity checks on ranges and distributions for major predictors (for example GDP per capita and life expectancy) to confirm that values are plausible and free of obvious data-entry errors.
+* Performed sanity checks on ranges and distributions for major predictors (for example, GDP per capita and life expectancy) to confirm that values are plausible and free of obvious data-entry errors.
 * Checked that country name harmonization and the inner-join logic did not introduce duplicate rows or unexpected drops in country coverage that would bias downstream visualizations and models.
 
 **2. Analysis Planning and Exploratory Framework (Nov 16-20):**
