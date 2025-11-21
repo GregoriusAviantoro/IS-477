@@ -1,0 +1,51 @@
+{
+  "timestamp": "2025-11-20T22:27:21.231711",
+  "merge_statistics": {
+    "happiness_only": [
+      "Laos",
+      "Macedonia",
+      "Syria",
+      "Slovakia",
+      "Taiwan",
+      "Venezuela",
+      "Hong Kong",
+      "Kyrgyzstan",
+      "Somalia",
+      "Kosovo"
+    ],
+    "gapminder_only": [
+      "Cape Verde",
+      "Oman",
+      "Hong Kong, China",
+      "Maldives",
+      "St. Lucia",
+      "North Macedonia",
+      "Djibouti",
+      "Cuba",
+      "Guyana",
+      "Sao Tome and Principe",
+      "Brunei",
+      "Timor-Leste",
+      "Samoa",
+      "Equatorial Guinea",
+      "Solomon Islands",
+      "St. Vincent and the Grenadines",
+      "Eswatini",
+      "Guinea-Bissau",
+      "Fiji",
+      "Barbados",
+      "Kyrgyz Republic",
+      "Comoros",
+      "Vanuatu",
+      "Lao",
+      "Tonga",
+      "Gambia",
+      "Slovak Republic",
+      "Suriname",
+      "Papua New Guinea",
+      "Bahamas"
+    ],
+    "merge_success_rate": 93.58974358974359,
+    "merged_country_count": 146
+  }
+}

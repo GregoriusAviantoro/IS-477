@@ -1,0 +1,438 @@
+{
+  "generation_timestamp": "2025-11-20T22:26:06.754924",
+  "happiness_dataset": {
+    "descriptive_stats": {
+      "happiness_rank": {
+        "count": 156.0,
+        "mean": 78.5,
+        "std": 45.17742799230607,
+        "min": 1.0,
+        "25%": 39.75,
+        "50%": 78.5,
+        "75%": 117.25,
+        "max": 156.0
+      },
+      "happiness_score": {
+        "count": 156.0,
+        "mean": 5.375916666666667,
+        "std": 1.119505852731943,
+        "min": 2.905,
+        "25%": 4.45375,
+        "50%": 5.378,
+        "75%": 6.1685,
+        "max": 7.632
+      },
+      "happiness_gdp_contribution": {
+        "count": 156.0,
+        "mean": 0.8914487179487179,
+        "std": 0.3919209481658884,
+        "min": 0.0,
+        "25%": 0.61625,
+        "50%": 0.9495,
+        "75%": 1.19775,
+        "max": 2.096
+      },
+      "social_support": {
+        "count": 156.0,
+        "mean": 1.2132371794871795,
+        "std": 0.3023718734184349,
+        "min": 0.0,
+        "25%": 1.0667499999999999,
+        "50%": 1.255,
+        "75%": 1.463,
+        "max": 1.644
+      },
+      "happiness_life_exp_contribution": {
+        "count": 156.0,
+        "mean": 0.5973461538461539,
+        "std": 0.24757876957930375,
+        "min": 0.0,
+        "25%": 0.42225,
+        "50%": 0.644,
+        "75%": 0.77725,
+        "max": 1.03
+      },
+      "freedom": {
+        "count": 156.0,
+        "mean": 0.4545064102564102,
+        "std": 0.16242431475354802,
+        "min": 0.0,
+        "25%": 0.356,
+        "50%": 0.487,
+        "75%": 0.5785,
+        "max": 0.724
+      },
+      "generosity": {
+        "count": 156.0,
+        "mean": 0.18100641025641023,
+        "std": 0.09847059471314082,
+        "min": 0.0,
+        "25%": 0.1095,
+        "50%": 0.174,
+        "75%": 0.239,
+        "max": 0.598
+      },
+      "corruption_perception": {
+        "count": 155.0,
+        "mean": 0.112,
+        "std": 0.09649177341961508,
+        "min": 0.0,
+        "25%": 0.051,
+        "50%": 0.082,
+        "75%": 0.137,
+        "max": 0.457
+      }
+    },
+    "missing_values": {
+      "Missing_Count": {
+        "corruption_perception": 1
+      },
+      "Missing_Percentage": {
+        "corruption_perception": 0.64
+      }
+    },
+    "data_types": {
+      "Column": {
+        "0": "happiness_rank",
+        "1": "country",
+        "2": "happiness_score",
+        "3": "happiness_gdp_contribution",
+        "4": "social_support",
+        "5": "happiness_life_exp_contribution",
+        "6": "freedom",
+        "7": "generosity",
+        "8": "corruption_perception"
+      },
+      "Data_Type": {
+        "0": "int64",
+        "1": "object",
+        "2": "float64",
+        "3": "float64",
+        "4": "float64",
+        "5": "float64",
+        "6": "float64",
+        "7": "float64",
+        "8": "float64"
+      },
+      "Non_Null_Count": {
+        "0": 156,
+        "1": 156,
+        "2": 156,
+        "3": 156,
+        "4": 156,
+        "5": 156,
+        "6": 156,
+        "7": 156,
+        "8": 155
+      },
+      "Unique_Values": {
+        "0": 156,
+        "1": 155,
+        "2": 154,
+        "3": 147,
+        "4": 146,
+        "5": 143,
+        "6": 136,
+        "7": 122,
+        "8": 110
+      }
+    },
+    "distributions": {
+      "happiness_rank": {
+        "mean": 78.5,
+        "median": 78.5,
+        "std": 45.17742799230607,
+        "min": 1.0,
+        "max": 156.0,
+        "skewness": 0.0,
+        "kurtosis": -1.2
+      },
+      "happiness_score": {
+        "mean": 5.375916666666667,
+        "median": 5.378,
+        "std": 1.119505852731943,
+        "min": 2.905,
+        "max": 7.632,
+        "skewness": 0.015179588167422637,
+        "kurtosis": -0.7107973573560815
+      },
+      "happiness_gdp_contribution": {
+        "mean": 0.8914487179487179,
+        "median": 0.9495,
+        "std": 0.3919209481658884,
+        "min": 0.0,
+        "max": 2.096,
+        "skewness": -0.21328039998846368,
+        "kurtosis": -0.3351407445591592
+      },
+      "social_support": {
+        "mean": 1.2132371794871795,
+        "median": 1.255,
+        "std": 0.3023718734184349,
+        "min": 0.0,
+        "max": 1.644,
+        "skewness": -1.0818221452008783,
+        "kurtosis": 1.1715594668944926
+      },
+      "happiness_life_exp_contribution": {
+        "mean": 0.5973461538461539,
+        "median": 0.644,
+        "std": 0.24757876957930375,
+        "min": 0.0,
+        "max": 1.03,
+        "skewness": -0.5259495163545732,
+        "kurtosis": -0.567135513664824
+      },
+      "freedom": {
+        "mean": 0.4545064102564102,
+        "median": 0.487,
+        "std": 0.16242431475354802,
+        "min": 0.0,
+        "max": 0.724,
+        "skewness": -0.7882506296215178,
+        "kurtosis": 0.11009181854481298
+      },
+      "generosity": {
+        "mean": 0.18100641025641023,
+        "median": 0.174,
+        "std": 0.09847059471314082,
+        "min": 0.0,
+        "max": 0.598,
+        "skewness": 0.8673970819121937,
+        "kurtosis": 1.4357994827253093
+      },
+      "corruption_perception": {
+        "mean": 0.112,
+        "median": 0.082,
+        "std": 0.09649177341961508,
+        "min": 0.0,
+        "max": 0.457,
+        "skewness": 1.6796783330570062,
+        "kurtosis": 2.506118631156212
+      }
+    },
+    "quality_checks": {
+      "duplicate_rows": 0,
+      "negative_values": {},
+      "potential_outliers": {
+        "happiness_gdp_contribution": 1,
+        "social_support": 3,
+        "freedom": 2,
+        "generosity": 2,
+        "corruption_perception": 17
+      }
+    },
+    "categorical_analysis": {
+      "country": {
+        "unique_values": 155,
+        "top_values": {
+          "Cyprus": 2,
+          "Ghana": 1,
+          "Nepal": 1,
+          "Venezuela": 1,
+          "Gabon": 1
+        }
+      }
+    }
+  },
+  "gapminder_dataset": {
+    "descriptive_stats": {
+      "year": {
+        "count": 175.0,
+        "mean": 2018.0,
+        "std": 0.0,
+        "min": 2018.0,
+        "25%": 2018.0,
+        "50%": 2018.0,
+        "75%": 2018.0,
+        "max": 2018.0
+      },
+      "life_expectancy": {
+        "count": 175.0,
+        "mean": 72.81085714285715,
+        "std": 7.159460171740527,
+        "min": 51.4,
+        "25%": 67.3,
+        "50%": 73.9,
+        "75%": 77.95,
+        "max": 84.8
+      },
+      "hdi": {
+        "count": 175.0,
+        "mean": 0.7189542857142857,
+        "std": 0.1526095542851538,
+        "min": 0.391,
+        "25%": 0.5905,
+        "50%": 0.736,
+        "75%": 0.839,
+        "max": 0.956
+      },
+      "co2_per_capita": {
+        "count": 175.0,
+        "mean": 4.5570582857142865,
+        "std": 5.783000125459623,
+        "min": 0.0243,
+        "25%": 0.6555,
+        "50%": 2.53,
+        "75%": 6.18,
+        "max": 38.0
+      },
+      "gdp_per_capita": {
+        "count": 174.0,
+        "mean": 13627.793103448275,
+        "std": 18788.625023069788,
+        "min": 282.0,
+        "25%": 1962.5,
+        "50%": 5320.0,
+        "75%": 15875.0,
+        "max": 104000.0
+      },
+      "service_workers_pct": {
+        "count": 175.0,
+        "mean": 55.966857142857144,
+        "std": 17.3180405191235,
+        "min": 10.3,
+        "25%": 44.5,
+        "50%": 58.6,
+        "75%": 69.75,
+        "max": 88.5
+      }
+    },
+    "missing_values": {
+      "Missing_Count": {
+        "gdp_per_capita": 1
+      },
+      "Missing_Percentage": {
+        "gdp_per_capita": 0.57
+      }
+    },
+    "data_types": {
+      "Column": {
+        "0": "country",
+        "1": "continent",
+        "2": "year",
+        "3": "life_expectancy",
+        "4": "hdi",
+        "5": "co2_per_capita",
+        "6": "gdp_per_capita",
+        "7": "service_workers_pct"
+      },
+      "Data_Type": {
+        "0": "object",
+        "1": "object",
+        "2": "int64",
+        "3": "float64",
+        "4": "float64",
+        "5": "float64",
+        "6": "float64",
+        "7": "float64"
+      },
+      "Non_Null_Count": {
+        "0": 175,
+        "1": 175,
+        "2": 175,
+        "3": 175,
+        "4": 175,
+        "5": 175,
+        "6": 174,
+        "7": 175
+      },
+      "Unique_Values": {
+        "0": 175,
+        "1": 6,
+        "2": 1,
+        "3": 126,
+        "4": 148,
+        "5": 164,
+        "6": 164,
+        "7": 154
+      }
+    },
+    "distributions": {
+      "year": {
+        "mean": 2018.0,
+        "median": 2018.0,
+        "std": 0.0,
+        "min": 2018.0,
+        "max": 2018.0,
+        "skewness": 0.0,
+        "kurtosis": 0.0
+      },
+      "life_expectancy": {
+        "mean": 72.81085714285715,
+        "median": 73.9,
+        "std": 7.159460171740527,
+        "min": 51.4,
+        "max": 84.8,
+        "skewness": -0.4510163801115317,
+        "kurtosis": -0.3569203176345872
+      },
+      "hdi": {
+        "mean": 0.7189542857142857,
+        "median": 0.736,
+        "std": 0.1526095542851538,
+        "min": 0.391,
+        "max": 0.956,
+        "skewness": -0.308630417611674,
+        "kurtosis": -0.9420362116772476
+      },
+      "co2_per_capita": {
+        "mean": 4.5570582857142865,
+        "median": 2.53,
+        "std": 5.783000125459623,
+        "min": 0.0243,
+        "max": 38.0,
+        "skewness": 2.590308447438132,
+        "kurtosis": 9.006389122439016
+      },
+      "gdp_per_capita": {
+        "mean": 13627.793103448275,
+        "median": 5320.0,
+        "std": 18788.625023069788,
+        "min": 282.0,
+        "max": 104000.0,
+        "skewness": 2.15800622592429,
+        "kurtosis": 4.851978551437401
+      },
+      "service_workers_pct": {
+        "mean": 55.966857142857144,
+        "median": 58.6,
+        "std": 17.3180405191235,
+        "min": 10.3,
+        "max": 88.5,
+        "skewness": -0.4098767240807717,
+        "kurtosis": -0.6024259886547902
+      }
+    },
+    "quality_checks": {
+      "duplicate_rows": 0,
+      "negative_values": {},
+      "potential_outliers": {
+        "co2_per_capita": 13,
+        "gdp_per_capita": 23
+      }
+    },
+    "categorical_analysis": {
+      "country": {
+        "unique_values": 175,
+        "top_values": {
+          "Afghanistan": 1,
+          "Palestine": 1,
+          "New Zealand": 1,
+          "Nicaragua": 1,
+          "Niger": 1
+        }
+      },
+      "continent": {
+        "unique_values": 6,
+        "top_values": {
+          "Africa": 51,
+          "Asia": 47,
+          "Europe": 39,
+          "North America": 19,
+          "South America": 11
+        }
+      }
+    }
+  }
+}

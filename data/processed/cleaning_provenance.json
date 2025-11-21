@@ -1,0 +1,27 @@
+{
+  "timestamp": "2025-11-20T22:25:49.125404",
+  "datasets": {
+    "happiness_2018": {
+      "source_path": "data/raw/2018.csv",
+      "source_url": "https://www.kaggle.com/datasets/unsdsn/world-happiness",
+      "file_hash": "5bf2466639ec323d16307d0574ca35263e7808898aca2f8b48056150d401bcd0",
+      "description": "World Happiness Report 2018"
+    },
+    "gapminder": {
+      "source_path": "data/raw/gapminder_data_graphs.csv",
+      "source_url": "https://www.kaggle.com/datasets/albertovidalrod/gapminder-dataset",
+      "file_hash": "3572f6a47c196e683478c9c8461d171d21c42574db28a311e61fc8c4695aff98",
+      "description": "Gapminder Global Development Data (filtered to 2018)"
+    }
+  },
+  "python_version": "2.2.2",
+  "pandas_version": "2.2.2",
+  "numpy_version": "1.26.4",
+  "cleaning_steps": [
+    "Standardized country names for consistent merging",
+    "Renamed columns for clarity and consistency",
+    "Filtered Gapminder data to year 2018",
+    "Removed rows with missing happiness scores",
+    "Documented all missing value patterns"
+  ]
+}
