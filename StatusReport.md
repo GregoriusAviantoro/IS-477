@@ -222,7 +222,7 @@ The **Integration & Analysis** task was completed on **November 20th**, within 5
 | Oct 17–25 | Data Acquisition | **Completed** | Oct 25 | Completed | 100% |
 | Oct 26–Nov 5 | Cleaning & Profiling | **Completed** | Nov 5 | Completed | 100% |
 | **Nov 6–15** | **Integration & Analysis** | **Completed** | **Nov 15** | **Completed (Nov 20)** | **100%** |
-| Nov 16–28 | Visualization & Automation | **In Progress** | Nov 28 | On Track (Nov 28) | 30% |
+| Nov 16–28 | Visualization & Automation | **In Progress** | Nov 28 | On Track (Nov 28) | 40% |
 | Dec 1–10 | Final Submission | **Pending** | Dec 10 | On Track (Dec 10) | 10% |
 
 ---
@@ -473,6 +473,8 @@ IS-477/
 | Integration complexity | Medium | Medium | Quality checks and validation implemented | **RESOLVED** |
 | Reproducibility issues | Low | High | Comprehensive documentation and version control | **ON TRACK** |
 | Visualization clarity | Low | Medium | Multiple review cycles planned | **ON TRACK** |
+
+---
 
 ## Conclusion
 
