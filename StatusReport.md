@@ -350,9 +350,49 @@ For this milestone, I took **primary responsibility** for the data curation pipe
 ### Rishi Akula (Analyst)
 
 **Individual Contribution Summary for Milestone 3:**
+For this milestone, I focused on validating the integrated dataset that Gregorius prepared and on planning the analysis and modeling workflow that will use this data to answer our four research questions. My work centered on reviewing the merged happiness–economy data, checking data quality from a modeling perspective, structuring the exploratory analysis, and preparing for correlation and regression steps.
 
-[Rishi should add his contribution summary here. This section should be committed by Rishi himself to the repository. His contributions should include: reviewing merge results, validating data quality, planning for analysis phase, any initial exploratory analysis performed, correlation analysis preparation, and next steps for modeling, visualization interpretation, and final reporting.]
+**1. Merge Review and Data Quality Validation (Nov 16-20):**
 
+* Reviewed `data/processed/happiness_economy_2018.csv` and `data/processed/merge_report.json` produced by `merge_data.py` to confirm that the merged dataset (144 countries, 16 variables) is suitable as the main analysis file.
+* Verified that key variables such as `happiness_score`, `happiness_rank`, `gdp_per_capita`, `life_expectancy`, `hdi_index`, and `continent` are present, consistently named, and aligned with the project plan and research questions.
+* Performed sanity checks on ranges and distributions for major predictors (for example, GDP per capita and life expectancy) to confirm that values are plausible and free of obvious data-entry errors.
+* Checked that country name harmonization and the inner-join logic did not introduce duplicate rows or unexpected drops in country coverage that would bias downstream visualizations and models.
+
+**2. Analysis Planning and Exploratory Framework (Nov 16-20):**
+
+* Designed an analysis roadmap that connects the merged dataset to the four research questions (GDP vs happiness, life expectancy vs happiness, regional differences, and key predictive indicators).
+* Identified which variables should be highlighted in initial descriptive tables and plots, prioritizing happiness scores, GDP per capita, life expectancy, HDI, and sector-share variables (services, industry, agriculture).
+* Outlined a step-by-step exploratory data analysis flow: start with summary statistics and distributions, then move to bivariate scatterplots by continent, and finally to correlation analysis and baseline regression models.
+* Planned how each EDA output (tables, scatterplots, and correlation heatmaps) will support model specification and provide clear visual evidence for the final report.
+
+**3. Initial Exploratory Checks and Correlation Preparation:**
+
+* Ran preliminary summaries of `happiness_score` and key economic indicators to confirm that the dataset is ready for visualization and modeling without additional cleaning.
+* Drafted the correlation analysis plan, focusing on a correlation matrix and heatmap relating `happiness_score` to `gdp_per_capita`, `life_expectancy`, `hdi_index`, and sector-share variables.
+* Sketched how correlation results will guide feature selection for baseline models (for example, linear regression predicting `happiness_score`), including how to compare the strength and direction of relationships across predictors.
+* Considered strategies for handling missing values and potential outliers in economic indicators so that models remain interpretable while preserving as many countries as possible.
+
+**Challenges Encountered:**
+
+* Balancing the number of predictors against the relatively small sample size (144 countries), which increases the risk of overfitting if too many variables are included at once.
+* Ensuring that indicators from different original sources (World Happiness Report and Gapminder) are interpreted consistently when used together in correlation analysis and regression modeling.
+* Deciding how to treat rows with partial economic data without either discarding too much information or introducing opaque imputation choices that would complicate reproducibility.
+
+**Solutions and Decisions:**
+
+* Prioritized a core, interpretable subset of predictors (GDP per capita, life expectancy, HDI, and sector-share variables) for the first round of correlation and modeling to keep the models simple and stable.
+* Chose to begin with straightforward correlation analysis and baseline linear regression models before considering any more complex approaches, so that results remain transparent and easy to explain in the final report.
+* Decided to retain documented missing-value patterns and handle them conservatively during modeling, rather than aggressive imputation, so that the limitations of the data can be clearly communicated.
+
+**Hours Invested:** Approximately **15 hours**
+
+**Next Steps:**
+
+* Lead the EDA and correlation analysis using the merged dataset, producing summary tables, correlation heatmaps, and key visualizations that directly address each research question.
+* Develop and evaluate baseline regression models predicting `happiness_score` from the selected economic indicators, check model assumptions, and refine feature selection as needed.
+* Collaborate with Gregorius to interpret the visualization and modeling outputs and translate them into a clear narrative about global happiness and economic development in 2018.
+* Take primary responsibility for drafting the final report, README, and reproducibility documentation in the Dec 1-10 window, ensuring that methods, findings, and limitations are clearly explained and aligned with the original project plan.
 ---
 
 ## Repository Structure
