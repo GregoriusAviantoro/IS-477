@@ -5,7 +5,7 @@ Global Happiness and Economic Development Project 2018
 This script runs the entire analysis pipeline from data cleaning through visualization.
 
 Author: Gregorius Aviantoro, Rishi Akula
-Date: December 2024
+Date: December 2025
 """
 
 import subprocess

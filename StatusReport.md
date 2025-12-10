@@ -1,7 +1,7 @@
 # Milestone 3: Interim Status Report
 ## Global Happiness and Economic Development Project 2018
 
-**Report Date:** November 20, 2024  
+**Report Date:** November 20, 2025  
 **Project Repository:** https://github.com/GregoriusAviantoro/IS-477  
 **Team Members:** Gregorius Aviantoro, Rishi Akula
 
@@ -127,7 +127,7 @@ This status report documents significant progress on our project examining the r
 
 ### 4. Integration & Analysis (Nov 6–15) — **COMPLETED** ✓
 
-**Status:** Complete (100%) — Completed November 20, 2024  
+**Status:** Complete (100%) — Completed November 20, 2025  
 **Responsible:** Gregorius Aviantoro / Rishi Akula
 
 **Artifacts:**
@@ -184,7 +184,7 @@ This status report documents significant progress on our project examining the r
 - Test full pipeline reproducibility
 - Document execution instructions
 
-**Expected Completion:** November 28, 2024
+**Expected Completion:** November 28, 2025
 
 ---
 
@@ -208,7 +208,7 @@ This status report documents significant progress on our project examining the r
 - Final testing of complete workflow from raw data to results
 - Prepare final submission materials
 
-**Expected Completion:** December 10, 2024
+**Expected Completion:** December 10, 2025
 
 ---
 
@@ -486,14 +486,14 @@ IS-477/
 
 ## Remaining Tasks & Next Steps
 
-### Immediate Tasks (By November 28, 2024):
+### Immediate Tasks (By November 28, 2025):
 1. **Execute visualization script** to generate three plots (GDP scatter, life expectancy scatter, correlation heatmap)
 2. **Review and refine visualizations** for clarity and presentation quality
 3. **Develop automated workflow script** (run_all.py or Snakefile) for full pipeline automation
 4. **Create workflow diagram** documenting the complete data pipeline
 5. **Test full pipeline reproducibility** from raw data to final outputs
 
-### Final Phase Tasks (By December 10, 2024):
+### Final Phase Tasks (By December 10, 2025):
 1. **Write comprehensive README.md** with project overview, installation, and execution instructions
 2. **Complete final analysis** and answer all four research questions with evidence
 3. **Document key findings and insights** from visualizations and statistical analysis
@@ -527,15 +527,15 @@ The team has worked effectively with **clear role divisions**, and all deliverab
 ---
 
 **Report Prepared By:** Gregorius Aviantoro  
-**Report Date:** November 20, 2024  
-**Last Updated:** November 20, 2024  
+**Report Date:** November 20, 2025  
+**Last Updated:** November 20, 2025  
 **Version:** 1.0  
 
 **Project Repository:** https://github.com/GregoriusAviantoro/IS-477  
 **Status Report Tag:** `status-report`  
-**Next Status Update Due:** December 5, 2024
+**Next Status Update Due:** December 5, 2025
 
 ---
 
-**Report Generated:** November 20, 2024  
-**Next Milestone:** Visualization & Automation (Due: November 28, 2024)
+**Report Generated:** November 20, 2025  
+**Next Milestone:** Visualization & Automation (Due: November 28, 2025)

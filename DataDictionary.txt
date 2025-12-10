@@ -1,0 +1,232 @@
+## Data Dictionary
+
+## Overview
+
+This data dictionary provides comprehensive documentation for all variables used in the Global Happiness and Economic Development project. The project integrates two primary datasets to analyze the relationship between economic indicators and national happiness levels.
+
+---
+
+## Dataset 1: World Happiness Report 2018
+
+**Source File**: `data/raw/2018.csv`  
+**Processed File**: `data/processed/happiness_2018_cleaned.csv`  
+**Records**: 156 countries  
+**Source**: United Nations Sustainable Development Solutions Network
+
+### Variables
+
+| Variable Name | Data Type | Units | Range | Description | Example Values |
+|--------------|-----------|-------|-------|-------------|----------------|
+| `happiness_rank` | Integer | Rank | 1-156 | Overall ranking of countries based on happiness score, where 1 is the happiest | 1, 50, 156 |
+| `country` | String | N/A | Text | Official name of the country or region | "Finland", "United States", "Afghanistan" |
+| `happiness_score` | Float | Score | 0.0-10.0 | Cantril Ladder life evaluation score where 0 = worst possible life and 10 = best possible life | 7.632, 5.456, 2.853 |
+| `happiness_gdp_contribution` | Float | Score | 0.0-2.0 | Estimated contribution of GDP per capita to the happiness score | 1.616, 0.842, 0.0 |
+| `social_support` | Float | Score | 0.0-2.0 | Estimated contribution of social support networks to happiness | 1.533, 0.789, 0.0 |
+| `happiness_life_exp_contribution` | Float | Score | 0.0-2.0 | Estimated contribution of healthy life expectancy to happiness | 0.796, 0.467, 0.0 |
+| `freedom` | Float | Score | 0.0-1.0 | Estimated contribution of freedom to make life choices to happiness | 0.635, 0.404, 0.0 |
+| `generosity` | Float | Score | -0.5-0.5 | Estimated contribution of generosity (charitable giving) to happiness | 0.362, -0.112, -0.453 |
+| `corruption_perception` | Float | Score | 0.0-1.0 | Estimated contribution of perceptions of corruption to happiness (lower = less corruption perceived) | 0.153, 0.453, 0.0 |
+
+### Notes
+- The happiness score is based on the Cantril Ladder methodology where respondents rate their current life
+- Contribution variables are calculated using regression analysis and represent how much each factor explains the happiness score
+- Country names have been standardized for consistency with Gapminder dataset
+
+---
+
+## Dataset 2: Gapminder Global Development Data
+
+**Source File**: `data/raw/gapminder_data_graphs.csv`  
+**Processed File**: `data/processed/gapminder_2018_cleaned.csv`  
+**Records**: 175 countries (2018 only)  
+**Source**: Gapminder Foundation (compiled from World Bank, UN, OECD)
+
+### Variables
+
+| Variable Name | Data Type | Units | Range | Description | Example Values | Missing Data |
+|--------------|-----------|-------|-------|-------------|----------------|--------------|
+| `country` | String | N/A | Text | Official name of the country | "Norway", "Japan", "Kenya" | None |
+| `continent` | Categorical | N/A | 5 values | Geographic continent | "Europe", "Asia", "Africa", "Americas", "Oceania" | None |
+| `year` | Integer | Year | 2018 | Year of observation (filtered to 2018 only) | 2018 | None |
+| `life_expectancy` | Float | Years | 50-85 | Average life expectancy at birth | 82.3, 72.1, 64.5 | ~5% |
+| `hdi` | Float | Index | 0.0-1.0 | Human Development Index combining income, education, and health | 0.953, 0.699, 0.354 | ~15% |
+| `co2_per_capita` | Float | Tonnes | 0.0-50.0 | CO2 emissions per person per year | 16.2, 4.5, 0.1 | ~12% |
+| `gdp_per_capita` | Float | USD | 500-150,000 | Gross Domestic Product per capita in constant international dollars | 75,235, 18,567, 1,234 | ~8% |
+| `service_workers_pct` | Float | Percentage | 0-100 | Percentage of workforce employed in service sector | 78.5, 45.2, 23.1 | ~18% |
+
+### Notes
+- Original dataset contained years 1998-2018; filtered to 2018 for this analysis
+- HDI (Human Development Index) is a composite statistic of life expectancy, education, and per capita income
+- GDP per capita is measured in purchasing power parity (PPP) adjusted dollars
+- Missing values are more common for smaller nations and developing countries where data collection is limited
+- Country names have been standardized to match World Happiness dataset
+
+---
+
+## Dataset 3: Merged/Integrated Dataset
+
+**File**: `data/processed/happiness_economy_2018.csv`  
+**Records**: 144 countries  
+**Description**: Inner join of World Happiness and Gapminder datasets on country name
+
+### All Variables (Combined)
+
+This dataset contains all variables from both source datasets:
+
+**From World Happiness Report**:
+- happiness_rank
+- country
+- happiness_score
+- happiness_gdp_contribution
+- social_support
+- happiness_life_exp_contribution
+- freedom
+- generosity
+- corruption_perception
+
+**From Gapminder**:
+- continent (added)
+- year (always 2018)
+- life_expectancy
+- hdi
+- co2_per_capita
+- gdp_per_capita
+- service_workers_pct
+
+**Total Variables**: 16  
+**Total Records**: 144 (92% merge success rate)
+
+### Key Variable Relationships
+
+| Variable Pair | Correlation | Interpretation |
+|--------------|-------------|----------------|
+| happiness_score ↔ hdi | r ≈ 0.84 | Very strong positive correlation |
+| happiness_score ↔ gdp_per_capita | r ≈ 0.82 | Very strong positive correlation |
+| happiness_score ↔ life_expectancy | r ≈ 0.80 | Very strong positive correlation |
+| happiness_score ↔ social_support | r ≈ 0.78 | Strong positive correlation |
+| happiness_score ↔ freedom | r ≈ 0.56 | Moderate positive correlation |
+| happiness_score ↔ corruption_perception | r ≈ -0.43 | Moderate negative correlation |
+
+---
+
+## Data Transformations Applied
+
+### Country Name Standardization
+
+The following mappings were applied to ensure consistent merging:
+
+| Original Name | Standardized Name |
+|---------------|-------------------|
+| Palestinian Territories | Palestine |
+| Congo (Brazzaville) | Congo, Rep. |
+| Congo (Kinshasa) | Congo, Dem. Rep. |
+| Trinidad & Tobago | Trinidad and Tobago |
+| Northern Cyprus | Cyprus |
+| Ivory Coast | Cote d'Ivoire |
+| Hong Kong S.A.R. of China | Hong Kong |
+
+### Column Renaming
+
+**World Happiness Dataset**:
+- "Overall rank" → `happiness_rank`
+- "Country or region" → `country`
+- "Score" → `happiness_score`
+- "GDP per capita" → `happiness_gdp_contribution`
+- "Social support" → `social_support`
+- "Healthy life expectancy" → `happiness_life_exp_contribution`
+- "Freedom to make life choices" → `freedom`
+- "Generosity" → `generosity`
+- "Perceptions of corruption" → `corruption_perception`
+
+**Gapminder Dataset**:
+- "life_exp" → `life_expectancy`
+- "hdi_index" → `hdi`
+- "co2_consump" → `co2_per_capita`
+- "gdp" → `gdp_per_capita`
+- "services" → `service_workers_pct`
+
+---
+
+## Missing Data Patterns
+
+### World Happiness Dataset
+- Minimal missing data (<2% across all variables)
+- No missing values in primary outcome variable (happiness_score)
+
+### Gapminder Dataset
+- hdi: ~15% missing (primarily smaller nations)
+- service_workers_pct: ~18% missing
+- co2_per_capita: ~12% missing
+- gdp_per_capita: ~8% missing
+- life_expectancy: ~5% missing
+
+### Handling Strategy
+- Missing happiness scores were removed (0 rows affected)
+- Missing economic indicators were retained and documented
+- No imputation was performed to maintain data integrity
+
+---
+
+## Data Quality Notes
+
+### Completeness
+- World Happiness: 100% complete for happiness_score
+- Gapminder: Variable completeness ranges from 82-95%
+- Merged dataset: 144 of 156 possible countries matched (92%)
+
+### Accuracy
+- All values validated against expected ranges
+- No impossible values detected (e.g., negative life expectancy)
+- Outliers identified but retained as legitimate variation
+
+### Consistency
+- No duplicate records found
+- All categorical variables use consistent naming
+- Temporal consistency maintained (all data from 2018)
+
+---
+
+## Usage Examples
+
+### Loading the Data
+
+```python
+import pandas as pd
+
+# Load merged dataset
+df = pd.read_csv('data/processed/happiness_economy_2018.csv')
+
+# Display basic info
+print(f"Countries: {len(df)}")
+print(f"Variables: {len(df.columns)}")
+print(df.head())
+```
+
+### Accessing Specific Variables
+
+```python
+# Happiness score for all countries
+happiness = df['happiness_score']
+
+# GDP per capita for European countries
+europe_gdp = df[df['continent'] == 'Europe']['gdp_per_capita']
+
+# Countries with high happiness (>7.0)
+happy_countries = df[df['happiness_score'] > 7.0]['country']
+```
+
+---
+
+## References
+
+1. **World Happiness Report 2018**  
+   Helliwell, J., Layard, R., & Sachs, J. (2018). World Happiness Report 2018. New York: Sustainable Development Solutions Network.
+
+2. **Gapminder Data**  
+   Gapminder Foundation. (2018). Gapminder Global Development Data. www.gapminder.org. Licensed under CC BY 4.0.
+
+3. **Cantril Ladder Methodology**  
+   Cantril, H. (1965). The Pattern of Human Concerns. New Brunswick, NJ: Rutgers University Press.
+
+4. **Human Development Index**  
+   United Nations Development Programme. (2020). Human Development Report 2020. New York: United Nations Development Programme.

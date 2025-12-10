@@ -565,7 +565,7 @@ pip install -r requirements.txt
 
 The raw and processed data files are stored on Box due to GitHub file size limitations.
 
-**Download Link**: [Box Folder - IS477 Project Data](#)
+**Download Link**: [Box Folder – IS477 Project Data](https://uofi.box.com/s/etncwiwh32nwlm13z7ij7su57xr238wy)
 
 **Instructions**:
 1. Click the Box link above
@@ -678,14 +678,6 @@ chmod +x src/*.py
 - Ensure you're using the correct Python version (3.8+)
 - Check package versions match `requirements.txt`
 
-### Expected Runtime
-
-- **Data cleaning**: ~10 seconds
-- **Data profiling**: ~15 seconds
-- **Data merging**: ~5 seconds
-- **Visualization**: ~10 seconds
-- **Total runtime**: ~40 seconds
-
 ### Validation
 
 To validate your reproduction:
@@ -698,6 +690,14 @@ To validate your reproduction:
 ---
 
 ## References
+
+## Metadata
+
+This project includes structured metadata conforming to DCAT (Data Catalog Vocabulary) standards:
+
+- **DCAT Metadata**: `MetaData.json` - Machine-readable dataset description following W3C DCAT 2.0 specification
+- **Data Dictionary**: `DataDictionary.md` - Human-readable variable documentation
+- **Citation Metadata**: `CITATION.cff` - Software citation information
 
 ### Data Sources
 
@@ -774,27 +774,15 @@ When using this data, please provide appropriate attribution to the original sou
 
 ---
 
-## Acknowledgments
-
-We would like to thank:
-
-- The United Nations Sustainable Development Solutions Network for making the World Happiness Report data publicly available
-- The Gapminder Foundation for their invaluable work in compiling and distributing global development data
-- The IS-477 course instructors and teaching assistants at the University of Illinois Urbana-Champaign for their guidance throughout this project
-- The open-source Python community for developing and maintaining the tools that made this analysis possible
-
----
-
 ## Contact
 
 For questions, issues, or collaboration inquiries:
 
 - **Project Repository**: https://github.com/GregoriusAviantoro/IS-477
-- **Report Issues**: https://github.com/GregoriusAviantoro/IS-477/issues
 - **Email**: [ga22@illinois.edu] & [rakul4@illinois.edu]
 
 ---
 
-**Last Updated**: December 2024  
+**Last Updated**: December 2025  
 **Project Version**: 1.0  
 **Repository**: https://github.com/GregoriusAviantoro/IS-477

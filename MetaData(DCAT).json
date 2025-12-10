@@ -1,0 +1,292 @@
+{
+    "@context": "https://www.w3.org/ns/dcat#",
+    "@type": "dcat:Dataset",
+    "identifier": "is477-happiness-economy-2018",
+    "title": "Global Happiness and Economic Development in 2018",
+    "description": "An integrated dataset examining the relationship between economic development indicators and national happiness across 144 countries in 2018. Combines data from the World Happiness Report 2018 and Gapminder Global Development Data to analyze correlations between GDP per capita, life expectancy, HDI, and happiness scores.",
+    "keyword": [
+      "happiness",
+      "economic development",
+      "GDP per capita",
+      "life expectancy",
+      "Human Development Index",
+      "national well-being",
+      "Cantril Ladder",
+      "quality of life",
+      "global development",
+      "social indicators",
+      "2018"
+    ],
+    "issued": "2025-12-09",
+    "modified": "2025-12-09",
+    "language": "en-US",
+    "temporal": "2018",
+    "spatial": "Global (144 countries across 5 continents)",
+    "accrualPeriodicity": "one-time snapshot",
+    "creator": [
+      {
+        "@type": "foaf:Person",
+        "foaf:name": "Gregorius Aviantoro",
+        "foaf:mbox": "mailto:ga22@illinois.edu",
+        "affiliation": {
+          "@type": "foaf:Organization",
+          "foaf:name": "University of Illinois Urbana-Champaign",
+          "foaf:homepage": "https://illinois.edu"
+        }
+      },
+      {
+        "@type": "foaf:Person",
+        "foaf:name": "Rishi Akula",
+        "affiliation": {
+          "@type": "foaf:Organization",
+          "foaf:name": "University of Illinois Urbana-Champaign"
+        }
+      }
+    ],
+    "publisher": {
+      "@type": "foaf:Organization",
+      "foaf:name": "University of Illinois Urbana-Champaign",
+      "foaf:homepage": "https://illinois.edu"
+    },
+    "contactPoint": {
+      "@type": "vcard:Contact",
+      "vcard:fn": "Gregorius Aviantoro",
+      "vcard:hasEmail": "mailto:ga22@illinois.edu"
+    },
+    "distribution": [
+      {
+        "@type": "dcat:Distribution",
+        "title": "Merged Dataset - Happiness and Economy 2018",
+        "description": "Integrated dataset combining World Happiness Report and Gapminder data for 144 countries",
+        "format": "CSV",
+        "mediaType": "text/csv",
+        "downloadURL": "https://uofi.box.com/s/etncwiwh32nwlm13z7ij7su57xr238wy/happiness_economy_2018.csv",
+        "accessURL": "https://github.com/GregoriusAviantoro/IS-477",
+        "byteSize": "approximately 50 KB",
+        "license": "http://creativecommons.org/licenses/by/4.0/"
+      },
+      {
+        "@type": "dcat:Distribution",
+        "title": "GDP vs Happiness Visualization",
+        "description": "Scatterplot showing relationship between GDP per capita and happiness score by continent",
+        "format": "PNG",
+        "mediaType": "image/png",
+        "downloadURL": "https://github.com/GregoriusAviantoro/IS-477/blob/main/results/gdp_happiness_scatter.png",
+        "license": "http://opensource.org/licenses/MIT"
+      },
+      {
+        "@type": "dcat:Distribution",
+        "title": "Life Expectancy vs Happiness Visualization",
+        "description": "Scatterplot showing relationship between life expectancy and happiness score by continent",
+        "format": "PNG",
+        "mediaType": "image/png",
+        "downloadURL": "https://github.com/GregoriusAviantoro/IS-477/blob/main/results/life_exp_happiness_scatter.png",
+        "license": "http://opensource.org/licenses/MIT"
+      },
+      {
+        "@type": "dcat:Distribution",
+        "title": "Correlation Heatmap",
+        "description": "Heatmap showing correlations between happiness and economic indicators",
+        "format": "PNG",
+        "mediaType": "image/png",
+        "downloadURL": "https://github.com/GregoriusAviantoro/IS-477/blob/main/results/correlation_heatmap.png",
+        "license": "http://opensource.org/licenses/MIT"
+      }
+    ],
+    "theme": [
+      "Social Sciences",
+      "Economics",
+      "Development Studies",
+      "Quality of Life"
+    ],
+    "landingPage": "https://github.com/GregoriusAviantoro/IS-477",
+    "license": "http://opensource.org/licenses/MIT",
+    "wasDerivedFrom": [
+      {
+        "@type": "dcat:Dataset",
+        "title": "World Happiness Report 2018",
+        "description": "Annual report ranking countries by happiness levels based on Cantril Ladder life evaluation",
+        "creator": {
+          "@type": "foaf:Organization",
+          "foaf:name": "United Nations Sustainable Development Solutions Network"
+        },
+        "issued": "2018",
+        "license": "Open Access",
+        "distribution": {
+          "@type": "dcat:Distribution",
+          "downloadURL": "https://www.kaggle.com/datasets/unsdsn/world-happiness",
+          "format": "CSV"
+        },
+        "coverage": "156 countries worldwide"
+      },
+      {
+        "@type": "dcat:Dataset",
+        "title": "Gapminder Global Development Data",
+        "description": "Comprehensive global development indicators compiled from World Bank, UN, and OECD sources",
+        "creator": {
+          "@type": "foaf:Organization",
+          "foaf:name": "Gapminder Foundation",
+          "foaf:homepage": "https://www.gapminder.org"
+        },
+        "issued": "2018",
+        "license": "http://creativecommons.org/licenses/by/4.0/",
+        "distribution": {
+          "@type": "dcat:Distribution",
+          "downloadURL": "https://www.kaggle.com/datasets/albertovidalrod/gapminder-dataset",
+          "format": "CSV"
+        },
+        "coverage": "175 countries, years 1998-2018"
+      }
+    ],
+    "accessLevel": "public",
+    "conformsTo": [
+      "https://www.w3.org/TR/vocab-dcat-2/",
+      "https://project-open-data.cio.gov/v1.1/schema/"
+    ],
+    "dataQuality": {
+      "completeness": "92% merge success rate (144 of 156 possible countries matched)",
+      "accuracy": "Data validated against source datasets with SHA-256 checksums",
+      "consistency": "Country names standardized, no duplicate records",
+      "timeliness": "All data from 2018"
+    },
+    "provenance": {
+      "processingSteps": [
+        "Country name standardization (13+ mappings applied)",
+        "Column renaming for consistency",
+        "Gapminder dataset filtered to 2018 only",
+        "Missing happiness scores removed (0 rows affected)",
+        "Inner join on country name",
+        "Data quality validation and profiling"
+      ],
+      "tools": [
+        "Python 3.8+",
+        "pandas 1.5.3",
+        "numpy 1.24.3",
+        "matplotlib 3.8.0",
+        "seaborn 0.12.2"
+      ],
+      "provenanceFiles": [
+        "data/processed/cleaning_provenance.json",
+        "data/processed/data_profile_report.json",
+        "data/processed/merge_report.json"
+      ]
+    },
+    "structure": {
+      "recordCount": 144,
+      "fieldCount": 16,
+      "fields": [
+        {
+          "name": "happiness_rank",
+          "type": "integer",
+          "description": "Overall ranking of countries based on happiness score (1-156)",
+          "units": "rank"
+        },
+        {
+          "name": "country",
+          "type": "string",
+          "description": "Official name of the country or region"
+        },
+        {
+          "name": "happiness_score",
+          "type": "float",
+          "description": "Cantril Ladder life evaluation score",
+          "units": "0-10 scale",
+          "range": "2.8-7.7"
+        },
+        {
+          "name": "happiness_gdp_contribution",
+          "type": "float",
+          "description": "Estimated contribution of GDP per capita to happiness score",
+          "units": "score contribution",
+          "range": "0.0-2.0"
+        },
+        {
+          "name": "social_support",
+          "type": "float",
+          "description": "Estimated contribution of social support to happiness",
+          "units": "score contribution",
+          "range": "0.0-2.0"
+        },
+        {
+          "name": "happiness_life_exp_contribution",
+          "type": "float",
+          "description": "Estimated contribution of healthy life expectancy to happiness",
+          "units": "score contribution",
+          "range": "0.0-2.0"
+        },
+        {
+          "name": "freedom",
+          "type": "float",
+          "description": "Estimated contribution of freedom to make life choices to happiness",
+          "units": "score contribution",
+          "range": "0.0-1.0"
+        },
+        {
+          "name": "generosity",
+          "type": "float",
+          "description": "Estimated contribution of generosity to happiness",
+          "units": "score contribution",
+          "range": "-0.5-0.5"
+        },
+        {
+          "name": "corruption_perception",
+          "type": "float",
+          "description": "Estimated contribution of corruption perceptions to happiness",
+          "units": "score contribution",
+          "range": "0.0-1.0"
+        },
+        {
+          "name": "continent",
+          "type": "categorical",
+          "description": "Geographic continent",
+          "values": ["Africa", "Americas", "Asia", "Europe", "Oceania"]
+        },
+        {
+          "name": "year",
+          "type": "integer",
+          "description": "Year of observation",
+          "value": 2018
+        },
+        {
+          "name": "life_expectancy",
+          "type": "float",
+          "description": "Average life expectancy at birth",
+          "units": "years",
+          "range": "50-85"
+        },
+        {
+          "name": "hdi",
+          "type": "float",
+          "description": "Human Development Index combining income, education, and health",
+          "units": "0-1 index",
+          "range": "0.354-0.953"
+        },
+        {
+          "name": "co2_per_capita",
+          "type": "float",
+          "description": "CO2 emissions per person per year",
+          "units": "tonnes",
+          "range": "0.0-50.0"
+        },
+        {
+          "name": "gdp_per_capita",
+          "type": "float",
+          "description": "Gross Domestic Product per capita in PPP-adjusted dollars",
+          "units": "USD",
+          "range": "500-150000"
+        },
+        {
+          "name": "service_workers_pct",
+          "type": "float",
+          "description": "Percentage of workforce employed in service sector",
+          "units": "percentage",
+          "range": "0-100"
+        }
+      ]
+    },
+    "references": [
+      "Helliwell, J., Layard, R., & Sachs, J. (2018). World Happiness Report 2018. New York: Sustainable Development Solutions Network.",
+      "Gapminder Foundation. (2018). Gapminder Global Development Data. www.gapminder.org",
+      "United Nations Development Programme. (2020). Human Development Report 2020."
+    ]
+  }

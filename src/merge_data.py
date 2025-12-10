@@ -1,7 +1,7 @@
 """
 Data Integration Script for Global Happiness and Economic Development Project
 Author: Gregorius Aviantoro
-Date: November 2024
+Date: November 2025
 """
 
 import pandas as pd
