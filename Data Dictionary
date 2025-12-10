@@ -1,0 +1,29 @@
+## Data Dictionary
+
+This data dictionary describes the variables in the integrated dataset `data/processed/happiness_economy_2018.csv`. The file contains one row per country for the year 2018.
+
+| Column name                 | Source                      | Type      | Description                                                                                 | Units / Range                                   |
+|-----------------------------|-----------------------------|-----------|---------------------------------------------------------------------------------------------|-------------------------------------------------|
+| country                     | Both                        | string    | Standardized country name used as the integration key                                       | Text                                            |
+| continent                   | Gapminder                   | string    | Continent to which the country belongs                                                      | Africa, Americas, Asia, Europe, Oceania         |
+| year                        | Gapminder                   | integer   | Year of observation                                                                         | 2018                                            |
+| happiness_rank              | World Happiness Report      | integer   | Rank of the country in the World Happiness Report 2018 (1 is highest happiness)             | 1 - 156 (subset in merged data)                 |
+| happiness_score             | World Happiness Report      | float     | Overall happiness score based on the Cantril ladder                                         | 0.0 - 10.0                                      |
+| gdp_per_capita_happiness    | World Happiness Report      | float     | GDP per capita contribution to the happiness score (normalized by WHR methodology)          | Index value (dimensionless)                     |
+| social_support              | World Happiness Report      | float     | Contribution of social support to the happiness score                                       | Index value (dimensionless)                     |
+| healthy_life_expectancy_whr | World Happiness Report      | float     | Contribution of healthy life expectancy to the happiness score                              | Index value (dimensionless)                     |
+| freedom                     | World Happiness Report      | float     | Contribution of freedom to make life choices to the happiness score                         | Index value (dimensionless)                     |
+| generosity                  | World Happiness Report      | float     | Contribution of generosity to the happiness score                                           | Index value (dimensionless)                     |
+| perceptions_of_corruption   | World Happiness Report      | float     | Contribution of perceptions of corruption to the happiness score                            | Index value (dimensionless)                     |
+| life_expectancy             | Gapminder                   | float     | Life expectancy at birth                                                                    | Years                                           |
+| hdi_index                   | Gapminder                   | float     | Human Development Index                                                                     | 0.0 - 1.0                                       |
+| co2_consump                 | Gapminder                   | float     | CO2 emissions per person                                                                    | Metric tons per capita                          |
+| gdp_per_capita_gapminder    | Gapminder                   | float     | Gross domestic product per capita                                                           | Constant international dollars (PPP adjusted)   |
+| services_share              | Gapminder                   | float     | Share of workers employed in the service sector                                             | Percent of total workforce (0 - 100)           |
+
+**Notes**
+
+- All rows correspond to the year 2018 after filtering the Gapminder data.
+- `gdp_per_capita_happiness` comes from the World Happiness Report and is on the report's internal index scale, while `gdp_per_capita_gapminder` is an economic GDP per capita measure in constant international dollars.
+- `healthy_life_expectancy_whr` is the contribution term used in the World Happiness Report, which is distinct from the raw `life_expectancy` value from Gapminder.
+- Countries with missing values in one or more indicators are retained to preserve transparency, as documented in the Data Quality section.
