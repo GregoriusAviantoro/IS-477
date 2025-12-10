@@ -9,11 +9,11 @@
 
 ## Contributors
 
-- **Gregorius Aviantoro** - Data Curator, Primary Developer
+- **Gregorius Aviantoro** - Data Curator
   - University of Illinois Urbana-Champaign
   - Email: [ga22@illinois.edu]
   
-- **Rishi Akula** - Data Analyst, Documentation Lead
+- **Rishi Akula** - Data Analyst
   - University of Illinois Urbana-Champaign
   - Email: [rakul4@illinois.edu]
 
