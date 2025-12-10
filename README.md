@@ -15,7 +15,7 @@
   
 - **Rishi Akula** - Data Analyst, Documentation Lead
   - University of Illinois Urbana-Champaign
-  - Email: [@illinois.edu]
+  - Email: [rakul4@illinois.edu]
 
 ---
 
@@ -791,7 +791,7 @@ For questions, issues, or collaboration inquiries:
 
 - **Project Repository**: https://github.com/GregoriusAviantoro/IS-477
 - **Report Issues**: https://github.com/GregoriusAviantoro/IS-477/issues
-- **Email**: [ga22@illinois.edu]
+- **Email**: [ga22@illinois.edu] & [rakul4@illinois.edu]
 
 ---
 
