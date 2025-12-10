@@ -23,7 +23,7 @@
 
 ### Project Overview
 
-This project examines the relationship between economic development and national happiness across countries in 2018. Using two trusted openly available datasets—the World Happiness Report 2018 and the Gapminder Global Development Data—we investigate how economic and demographic factors such as GDP per capita, life expectancy, and Human Development Index (HDI) correlate with citizens' reported happiness levels.
+This project examines the relationship between economic development and national happiness across countries in 2018. Using two trusted, openly available datasets, the World Happiness Report 2018 and the Gapminder Global Development Data, we investigate how economic and demographic factors such as GDP per capita, life expectancy, and the Human Development Index (HDI) correlate with citizens’ reported happiness levels.
 
 ### Motivation
 
