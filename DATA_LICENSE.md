@@ -19,8 +19,8 @@ The World Happiness Report data is publicly available and free to use for resear
 **URL**: https://www.kaggle.com/datasets/albertovidalrod/gapminder-dataset
 
 This data is licensed under CC BY 4.0, which allows you to:
-- Share — copy and redistribute the material in any medium or format
-- Adapt — remix, transform, and build upon the material for any purpose, even commercially
+- Share - copy and redistribute the material in any medium or format
+- Adapt - remix, transform, and build upon the material for any purpose, even commercially
 
 Under the following terms:
 - **Attribution** — You must give appropriate credit, provide a link to the license, and indicate if changes were made.
