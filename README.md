@@ -23,11 +23,11 @@
 
 ### Project Overview
 
-This project examines the relationship between economic development and national happiness across countries in 2018. Using two trusted, openly available datasets, the World Happiness Report 2018 and the Gapminder Global Development Data, we investigate how economic and demographic factors such as GDP per capita, life expectancy, and the Human Development Index (HDI) correlate with citizens’ reported happiness levels.
+This project examines the relationship between economic development and national happiness across countries in 2018. Using two trusted, openly available datasets, the World Happiness Report 2018 (WHR) and the Gapminder Global Development Data, we investigate how economic and demographic factors such as GDP per capita, life expectancy, and the Human Development Index (HDI) correlate with citizens’ reported happiness levels. Our final, integrated dataset consists of 144 countries and 15 variables, providing a robust foundation for comparative analysis.
 
 ### Motivation
 
-Understanding the factors that contribute to national happiness is crucial for policymakers and researchers alike. While economic prosperity is often assumed to correlate with well-being, the relationship is complex and multifaceted. This project aims to quantify these relationships using rigorous data curation practices and transparent analytical methods.
+Understanding the factors that contribute to national happiness is crucial for policymakers and researchers alike. While economic prosperity is often assumed to correlate with well-being, the relationship is complex and multifaceted. This project aims to not only quantify these relationships using standard correlation metrics but also to highlight the value of rigorous data curation practices and transparent analytical methods. By integrating external, objective indicators (like Gapminder's HDI and detailed GDP) with the subjective, survey-based happiness factors from the WHR, we seek to establish a more nuanced understanding of the economic bedrock required for national subjective well-being. Furthermore, the project serves as a case study in creating a fully reproducible computational environment, ensuring that all findings can be independently verified.
 
 ### Research Questions
 
