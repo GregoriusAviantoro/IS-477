@@ -95,7 +95,7 @@ This project demonstrates:
 **License**: Open access, publicly available
 
 **Description**:
-The World Happiness Report is an annual publication that ranks countries by their happiness levels based on the Cantril Ladder life evaluation. Respondents rate their current life from 0 (worst possible) to 10 (best possible). The report also includes explanatory factors that contribute to the happiness score.
+The World Happiness Report is an annual publication that establishes global rankings of countries based on their citizens' reported happiness levels. The core measure is the Cantril Ladder life evaluation, where survey respondents are asked to visualize a ladder with steps numbered from 0 (representing the worst possible life) to 10 (representing the best possible life) and indicate where they currently stand. Beyond this primary Score, the report provides the results of regression analyses to break down the factors contributing to the happiness score. These explanatory factors are critical, as they allow us to assess the influence of specific dimensions like economic output (GDP per capita) and social infrastructure (Social support) on national well-being.
 
 **Variables**:
 - Overall rank: Ranking of countries (1-156)
@@ -131,7 +131,7 @@ The World Happiness Report is an annual publication that ranks countries by thei
 **Attribution**: Gapminder Foundation, www.gapminder.org
 
 **Description**:
-Gapminder compiles data from multiple authoritative international sources to provide comprehensive development indicators. This dataset includes economic, demographic, and environmental metrics that complement the happiness data.
+The Gapminder dataset serves as the source for objective development indicators that are compiled from multiple authoritative international sources. Its inclusion is essential as it provides metrics that are external to the subjective survey data of the WHR, thus enriching the analytical scope. This dataset contains a longitudinal collection of economic, demographic, and environmental statistics, allowing us to incorporate high-value variables like the Human Development Index (HDI) and real, constant-dollar GDP per capita into the happiness analysis. The data's multi-source compilation approach ensures greater reliability and depth, providing a solid comparative context for the observed happiness scores across continents and various development stages.
 
 **Variables**:
 - country: Country name
@@ -171,11 +171,15 @@ The integrated dataset combines happiness indicators with economic and demograph
 
 ### Quality Assessment Methodology
 
-We performed comprehensive data quality assessment using automated profiling scripts that evaluated:
-1. Completeness (missing values)
-2. Accuracy (range validation, type checking)
-3. Consistency (duplicate detection)
-4. Validity (outlier detection using IQR method)
+We performed a comprehensive data quality assessment using automated profiling scripts to establish the fitness-for-use of both source datasets before integration. The methodology systematically evaluated the data against four critical dimensions:
+
+1. Completeness: Identifying all missing values and assessing the impact of missingness patterns.
+
+2. Accuracy: Validating the range and data types of all numeric and categorical fields (e.g., ensuring Score is between 0 and 10).
+
+3. Consistency: Detecting and resolving naming discrepancies between sources and identifying duplicate records within each source.
+
+4. Validity: Employing the Interquartile Range (IQR) method for statistical outlier detection to flag extreme values, which were then evaluated against known real-world economic conditions.
 
 ### Happiness Dataset Quality
 
