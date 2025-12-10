@@ -717,13 +717,13 @@ To validate your reproduction:
 
 ### Methodological References
 
-7. United Nations Development Programme. (2020). *Human Development Report 2020*. New York: United Nations Development Programme.
+7. United Nations Development Programme. (2020). Human development report 2020: The next frontier: Human development and the Anthropocene. United Nations Development Programme. https://hdr.undp.org/content/human-development-report-2020
 
-8. Diener, E., & Seligman, M. E. P. (2004). Beyond Money: Toward an Economy of Well-Being. *Psychological Science in the Public Interest*, 5(1), 1-31.
+8. Diener, E., & Seligman, M. E. P. (2004). Beyond money: Toward an economy of well-being. Psychological Science in the Public Interest, 5(1), 1–31. https://doi.org/10.1111/j.0963-7214.2004.00501001.x
 
-9. Easterlin, R. A. (1974). Does Economic Growth Improve the Human Lot? Some Empirical Evidence. In P. A. David & M. W. Reder (Eds.), *Nations and Households in Economic Growth: Essays in Honor of Moses Abramovitz* (pp. 89-125). Academic Press.
+9. Easterlin, R. A. (1974). Does economic growth improve the human lot? Some empirical evidence. In P. A. David & M. W. Reder (Eds.), Nations and households in economic growth: Essays in honor of Moses Abramovitz (pp. 89–125). Academic Press.
 
-10. Stevenson, B., & Wolfers, J. (2008). Economic Growth and Subjective Well-Being: Reassessing the Easterlin Paradox. *Brookings Papers on Economic Activity*, 2008(1), 1-87.
+10. Stevenson, B., & Wolfers, J. (2008). Economic growth and subjective well-being: Reassessing the Easterlin paradox. Brookings Papers on Economic Activity, 2008(1), 1–87. https://doi.org/10.1353/eca.0.0001
 
 ### Tools and Platforms
 
